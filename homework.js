@@ -6,6 +6,7 @@ the list and checks that the current name is in the string passed in. The output
 let dog_string = "Hello Max, my name is Dog, and I have purple eyes!";
 let dog_names = ["Max", "HAS", "PuRple", "dog"];
 
+//Wasn't sure if there needed to be a return or a console.log on the matched list, wording was kinda ambigious
 function findWords(string, search) {
   let results = [];
   for (idx in search) {
@@ -18,7 +19,7 @@ function findWords(string, search) {
   return results;
 }
 console.log(findWords(dog_string, dog_names));
-//Call method here with parameters
+
 
 //============Exercise #2 ============//
 /*Write a function that takes in an array and removes every even index with a splice,
