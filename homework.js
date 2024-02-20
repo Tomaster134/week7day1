@@ -20,12 +20,12 @@ function findWords(string, search) {
 }
 console.log(findWords(dog_string, dog_names));
 
-
 //============Exercise #2 ============//
 /*Write a function that takes in an array and removes every even index with a splice,
 and replaces it with the string "even index" */
 
-let arr = ["Max", "Baseball", "Reboot", "Goku", "Trucks", "Rodger"];
+let arr1 = ["Max", "Baseball", "Reboot", "Goku", "Trucks", "Rodger"];
+let arr2 = ["Max", "Baseball", "Reboot", "Goku", "Trucks", "Rodger"];
 
 function replaceEvens(arr) {
   let new_arr = [];
@@ -39,18 +39,18 @@ function replaceEvens(arr) {
   return new_arr;
 }
 
-console.log(replaceEvens(arr));
+console.log(replaceEvens(arr1));
 
 function replaceEvensInPlace(arr) {
   for (idx in arr) {
     if (idx % 2 == 0) {
-      arr.splice(idx, 1, 'even index');
+      arr.splice(idx, 1, "even index");
     }
   }
 }
 
-replaceEvensInPlace(arr);
-console.log(arr);
+replaceEvensInPlace(arr2);
+console.log(arr2);
 
 //Expected output
 //Given arr == ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
@@ -87,17 +87,15 @@ function squareDigits(num) {
 
 // 3. Multiples of 3 or 5
 function solution(number) {
-  let sum = 0
+  let sum = 0;
   for (let i = 0; i < number; i++) {
     if (i % 3 == 0 && i % 5 == 0) {
       sum += i;
-    }
-    else if (i % 5 == 0) {
+    } else if (i % 5 == 0) {
       sum += i;
-    }
-    else if (i % 3 == 0) {
+    } else if (i % 3 == 0) {
       sum += i;
     }
   }
-  return sum
+  return sum;
 }
