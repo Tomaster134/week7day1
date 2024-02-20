@@ -40,6 +40,9 @@ function replaceEvens(arr) {
 }
 
 console.log(replaceEvens(arr1));
+console.log(arr1);
+
+//Included two functions to make sure I'm understanding the difference between two functions
 
 function replaceEvensInPlace(arr) {
   for (idx in arr) {
